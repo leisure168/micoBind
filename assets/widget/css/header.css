@@ -1,0 +1,70 @@
+html, body {
+	-webkit-touch-callout: none;
+	-webkit-text-size-adjust: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+}
+html body {
+	height: 100%;
+	background-color: #ffffff;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+.headerul {
+	/*没有前面的黑点*/
+	list-style-type: none;
+	/*margin: 0px;*/
+	/*padding: 0px;*/
+	/*height: 45px;*/
+	/*line-height: 45px;*/
+	/*background-color: #1c6ac6;*/
+	/*text-align: center;*/
+}
+.header {
+	/*文字阴影*/
+	text-shadow: none;
+	position: relative;
+	height: 45px;
+	line-height: 45px;
+	/*background-color: #106eb7;*/
+	background-color: #1c6ac6;
+}
+.headerul li {
+	/*set to one line*/
+	display: inline;
+	/*padding: 3px 5px;*/
+}
+.headerul img {
+	height: 20px;
+}
+.left {
+	position: absolute;
+	left: 16px;
+	height: 45px;
+}
+.headerul .left  img {
+	height: 20px;
+	vertical-align: top;
+	margin-top: 13px;
+}
+.headerul .center {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+.headerul .center span {
+	font-size: 18px;
+	color: #fff;
+}
+.headerul .right {
+	position: absolute;
+	right: 16px;
+	height: 45px;
+}
+.headerul .right img {
+	height: 20px;
+	vertical-align: top;
+	margin-top: 13px;
+}

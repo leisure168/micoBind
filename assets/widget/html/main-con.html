@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,user-scalable=0">
+    <title>APICloud</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../css/common.css" />
+    <script type="text/javascript">
+
+		var uzmoduledemo = null;
+		apiready = function(){
+	    	uzmoduledemo = api.require('moduleDemo');
+	    }
+	    
+		function showAlert(){
+			var param = {msg:"Hello APICloud!"};
+	        uzmoduledemo.showAlert(param, function(ret, err){
+	        	alert(JSON.stringify(ret));
+	        });
+		}
+		
+		function startActivity(){
+			var param = {appParam:"Hello APICloud!"};
+	        uzmoduledemo.startActivity(param);
+		}
+		
+		function startActivityForResult(){
+			var param = {appParam:"Hello APICloud!"};
+			var resultCallback = function(ret, err){
+				document.getElementById("activity_result").innerHTML = JSON.stringify(ret);
+			}
+	        uzmoduledemo.startActivityForResult(param, resultCallback);
+		}
+		
+		function vibrate(){
+			var mill = document.getElementById("vibrate").value;
+			var param = {milliseconds:mill};
+	        uzmoduledemo.vibrate(param);
+		}
+		
+		function stopVibrate(){
+	        uzmoduledemo.stopVibrate();
+		}
+		
+		function addView(){
+			var param = {x:20,y:20,w:200,h:200};
+	        uzmoduledemo.addView(param);
+		}
+		
+		function removeView(){
+		
+	        uzmoduledemo.removeView();
+		}
+		
+		function getProp(){
+			
+	        alert("系统版本：" + uzmoduledemo.version + "\n手机型号: " + uzmoduledemo.model);
+		}
+    
+	</script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="main"> 
+            <div  >
+            	<input type="button" onclick="showAlert()" value="弹出Alert" /><br><br>
+            	<input type="button" onclick="startActivity()" value="启动Activity" /><br><br>
+            	<input type="button" onclick="startActivityForResult()" value="启动Activity并获取该Activity的返回值" /><br><br>
+            	<div style="font-size:0.8em;">acticity返回值:</div>
+            	<div id="activity_result" style="width:100%;word-wrap: break-word;word-break: normal;"></div><br><br>
+            	<div style="font-size:0.8em;">输入震动时间,单位：毫秒</div>
+            	<input type="text" id="vibrate" value="20000" /><br><br>
+            	<input type="button" onclick="vibrate()" value="开始震动" /><br>
+            	<input type="button" onclick="stopVibrate()" value="停止震动" /><br><br>
+            	<input type="button" onclick="addView()" value="添加自定义View到屏幕" /><br><br>
+            	<input type="button" onclick="removeView()" value="从屏幕移除自定义View" /><br><br>
+            	<input type="button" onclick="getProp()" value="获取属性" /><br><br>
+            </div>
+
+        </div>   
+    </div>
+</body>
+</html>

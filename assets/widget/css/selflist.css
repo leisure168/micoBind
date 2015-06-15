@@ -1,0 +1,316 @@
+.devctrlrow {
+	display: table;
+	width: 100%;
+	/*height: 140px;*/
+}
+.devctrlrow ul {
+	/*margin-left: 15px;*/
+}
+.devctrlrow ul li {
+	border-bottom: 1px #CCCCCC solid;
+	display: none;
+}
+#devdataid {
+	display: none;
+}
+.devctrlrow ul li a {
+	/*margin-left: 15px;*/
+}
+.devctrlrow ul li img {
+	margin-left: 15px;
+}
+.devctrlrow .devinfocls {
+	height: 72px;
+	line-height: 72px;
+	vertical-align: middle;
+}
+.devctrlrow .devinfocls img {
+	vertical-align: middle;
+}
+.devctrlrow .devinfocls span {
+	margin-left: 15px;
+	color: #595757;
+	font-size: 15px;
+	font-family: Arial;
+}
+.devctrlrow .devinfocls .rightarr {
+	height: 26px;
+	width: 15px;
+	position: absolute;
+	right: 15px;
+	margin-top: 25px;
+}
+.devctrlrow .devinfocls .devdetail {
+	margin-right: 15px;
+	float: right;
+	font-size: 17px;
+	color: #acacad;
+}
+.devinfocls img {
+	height: 40px;
+	width: 40px;
+}
+.devinfotitle {
+	height: 36px;
+	line-height: 36px;
+	background-color: #eae9e9;
+	border-bottom: 1px #CCCCCC solid;
+}
+.devinfotitle span {
+	margin-left: 15px;
+	color: #221814;
+	font-size: 13px;
+	font-family: Arial;
+}
+.canvascls {
+	/*margin-top: 18px;*/
+}
+.colorspancls {
+	color: #595757;
+	font-size: 12px;
+	font-family: Arial;
+	margin-top: 20px;
+	/*margin-bottom: 10px;*/
+}
+/*串口透传*/
+.devchatmsglicls {
+	text-align: right;
+	margin-bottom: 10px;
+}
+#devsayli {
+	text-align: left;
+}
+#devsayli span {
+	background-color: #106EB7;
+}
+#devsaymsgid {
+	text-align: left;
+}
+.devchatmsglicls span {
+	background-color: #3ABA63;
+	border-radius: 10px;
+	opacity: 0.8;
+	font-size: 15px;
+	text-align: left;
+	color: #000000;
+	padding: 3px;
+}
+#devchatmsgimgcls {
+	height: 30px;
+	width: 30px;
+	border-radius: 10px;
+	float: right;
+}
+#chatlist {
+	height: 100%;
+}
+.onoffbtn {
+	text-align: right;
+	margin-right: 15px;
+}
+.micocontent {
+	margin-top: 45px;
+	background-color: #F0F0F0;
+	text-shadow: none;
+}
+.ui-body-f {
+	background-color: #106EB7;
+}
+.ui-focus {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.login {
+	background: url(../image/sekuai-3.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+.register {
+	background: url(../image/sekuai-3.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+.nextstep {
+	background: url(../image/sekuai-3.png) 50% 0 no-repeat;
+	background-size: cover;
+}
+.logo {
+	padding-top: 20%;
+	padding-bottom: 10px;
+	height: 100px;
+}
+.logo img {
+	height: 108px;
+	width: 118px;
+}
+.content {
+	margin: 21px 30px 0px 30px;
+	padding: 21px 19px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+input {
+	height: 30px;
+	/*padding-left: 10px;*/
+	width: 100%;
+	border: 1px solid #FFFFFF;
+}
+.phone {
+	border-bottom: 1px solid #CCCCCC;
+	/*border-radius: 3px;*/
+}
+.psw {
+	border-bottom: 1px solid #CCCCCC;
+	/*border-radius: 3px;*/
+	margin-top: 16px;
+}
+.verify {
+	border-bottom: 1px solid #CCCCCC;
+	/*border-radius: 3px;*/
+	/*width: 60%;*/
+	margin-top: 16px;
+}
+.subbutton {
+	margin-top: 30px;
+	text-align: center;
+	background-image: url(../image/sekuai-Log-In.png);
+	/*background-color: #106eb7;*/
+	border-radius: 3px;
+}
+.subbutton span a {
+	height: 35px;
+	line-height: 35px;
+	color: #FFFFFF;
+}
+.forgotpsw {
+	text-align: right;
+}
+.forgotpsw a {
+	color: #b5b4b5;
+	font-size: 12px;
+	font-family: Arial;
+	margin-top: 3px;
+}
+.toregistcls {
+	margin: 39px 30px 0px 30px;
+	padding: 0px 19px;
+}
+.toregistbtn {
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #FEFEFE;
+	text-align: center;
+	border-radius: 3px;
+}
+.toregistbtn span a {
+	color: #FEFEFE;
+}
+.registcls {
+	margin: 39px 30px 0px 30px;
+	padding: 0px 19px;
+}
+.registbtn {
+	height: 35px;
+	line-height: 35px;
+	border: 1px solid #FEFEFE;
+	text-align: center;
+	border-radius: 3px;
+}
+.registbtn span a {
+	color: #FEFEFE;
+}
+.ui-block-b {
+	line-height: 30px;
+	float: right;
+	background: #0088CC;
+	border-radius: 5px;
+	text-align: center;
+}
+.ui-block-b span {
+	color: #FFFFFF;
+}
+/*用户管理界面布局*/
+.myselfrow {
+	display: table;
+	width: 100%;
+}
+.myselfrow ul li {
+	border-bottom: 1px #CCCCCC solid;
+}
+.myselfrow ul li img {
+	margin-left: 15px;
+}
+.myselfrow .myselflistcls {
+	height: 54px;
+	line-height: 54px;
+	vertical-align: middle;
+}
+.myselfrow .myselflistcls img {
+	vertical-align: middle;
+}
+.myselfrow .myselflistcls span {
+	margin-left: 15px;
+	color: #a8a7a7;
+	font-size: 15px;
+	font-family: Arial;
+	font-weight: 400;
+}
+.myselfrow .myselflistcls .rightarr {
+	height: 20px;
+	width: 12px;
+	position: absolute;
+	right: 16px;
+	margin-top: 18px;
+}
+.myselfrow .myselflistcls .devdetail {
+	margin-right: 15px;
+	float: right;
+	font-size: 17px;
+	color: #acacad;
+}
+.myselflistcls img {
+	height: 27px;
+	width: 27px;
+}
+.myselflisttitle {
+	height: 36px;
+	line-height: 36px;
+	background-color: #eae9e9;
+	/*border-bottom:1px #CCCCCC solid;*/
+}
+.myselflisttitle span {
+	margin-left: 15px;
+	color: #221814;
+	font-size: 13px;
+	font-family: Arial;
+}
+.myselfrow .myselflisttitle {
+	height: 150px;
+	background-image: url(../image/sekuai-daohang.png);
+}
+.myselflisttitle img {
+	height: 92px;
+	width: 92px;
+}
+.myselflisttitle span {
+	color: #FEFEFE;
+	font-size: 20px;
+	font-family: Arial;
+}
+/*feedback*/
+.fdcontent {
+	margin: 21px 30px 0px 30px;
+	padding: 21px 19px;
+	background-color: #FFFFFF;
+	border-radius: 5px;
+}
+.fdcontentcls {
+	border: 1px dashed #0088CC;
+	font-size: 14px;
+	color: #31304A;
+}
+.savetipscls span {
+	margin-top: 10px;
+	color: #1c6ac6;
+	font-size: 12px;
+	font-family: Arial;
+}
